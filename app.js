@@ -9,9 +9,6 @@ const BMIData = [
 const inputs = document.querySelectorAll('input');
 const displayBMI = document.querySelector('.bmi-value');
 const result = document.querySelector('.result');
-
-// BMI = weight in Kg / height2 in m
-
 const form = document.querySelector('form');
 
 form.addEventListener('submit', handleForm);
@@ -32,6 +29,8 @@ function calculateBMI() {
     return;
   }
 
+  // Math.pow = changing the centimeters in meters and calcul it as squared
+  // toFixed = keep one number after the comma
   const BMI = (weight / Math.pow(height / 100, 2)).toFixed(1);
   //console.log(BMI);
 

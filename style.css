@@ -7,6 +7,9 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  align-content: center;
   min-height: 100vh;
   font-family: Lato, Helvetica, sans-serif;
   background: linear-gradient(to right, #36d1dc, #5b86e5);
